@@ -2,93 +2,253 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>My portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CDN Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    
+    <!-- Font-Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 </head>
 <body>
 
+    <!-- Nav Bar Start-->
+    <div class="container active" id="container">
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top shadow-sm">
+        <div class="container-lg">
+          <a class="navbar-brand fw-bold" href="#hero">Renssu.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          </div>
+          <div class="toggle-icon">
+            <i class='bx bx-moon text-center'></i>
+        </div>
+          </div>
+        </div>
+      #f0f3fd
+      <!-- Nav Bar End-->
 
-    <!-- Navbar Section Start -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark fixed-top">
-      
-        <!-- Logo -->
-        
-		<a class="navbar-brand" href="#"><span>R</span>enssu.</a>
-
-        
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav mx-auto mr-3 mt-2">
-				<li class="nav-item">
-					<a class="active nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-				</li>
-                <li class="nav-item">
-					<a class="nav-link" href="#">Projects</a></li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contacts</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#">Tools</a>
-				</li>
-			</ul>
-            <a class="btn btn-outline-dark d-none d-lg-block" href="#">Let's Talk</a>
-		</div>
-    </nav> 
-
-    <section class="hero" id="hero">
-        <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#hero"></a>
-                </li>
-            </ul>
-    
-            <div class="container container mt-5">
-                <div class="row align-items-center">
-                    <div class="col-sm-6 order-sm-1">
-                        <h3>Hello, It's Me</h3>
-                        <h1>Renato Renssu Docil Jr.</h1>
-                        <h3>And I'm a <span>Full Stack Web Developer</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum laoreet finibus. Sed porta
-                            lobortis metus sed commodo.</p>
-                        <div class="social-media">
-                            <a href="https://www.facebook.com/renssudociljr/" target="_blank"><i class='bx bxl-facebook'></i></a>
-                            <a href="https://www.linkedin.com/in/renssudociljr/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                            <a href="https://github.com/renssudociljr01 " target="_blank"><i class='bx bxl-github'></i></a>
-                        </div>
-                        <a href="#" class="btn">Download CV</a>
+    <!-- Home Page Start-->
+      <section class="hero" id="hero">
+        <div class="container mt-sm-5">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-md-6 col-lg-6 order-2 order-sm-1 order-2 order-md-1 order-lg-1 mt-5">
+                    <code> &lt;HelloWorld /&gt;</code>
+                    <!-- <h1 class="greetings"> &lt;HelloWorld /&gt; </h1> -->
+                    <h1 class> <span class="auto-input"></span></h1>
+                    <h3 class><span>Full Stack Web Developer</span></h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/renssudociljr/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.linkedin.com/in/renssudociljr/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/renssudociljr01 " target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
-                    <div class="col-sm-6 order-sm-2 mt-lg-4 ml-lg-">
-                        <img src="images/imgLight.png" alt="" class="img-fluid float-end">
-                    </div>
+                    <a href="#" class="btn">Download CV</a>    
+                </div>
+
+                <div class="hero-img col-sm-6 col-md-6 col-lg-6 order-1 order-sm-2 order-1 order-md-2 order-lg-2 text-center mt-5">
+                    <img class="rounded-circle img-fluid d-sm-none" style="height: 350px; width: 350px;" src="images/imgcurl.jpg" alt="">
+                    <img class="rounded-circle img-fluid d-none d-sm-block" src="images/imgcurl.jpg" alt="">
                 </div>
             </div>
+
         </div>
     </section>
+     <!-- Home Page End -->
 
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="display-5 fw-bold">Projects</h2>
-        </div>
-    </section> 
+    <!-- About Me Page Start -->
 
-    <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-</body>
+    <!-- About Me Page End -->
+
+    
+    <!-- Projects Start -->
+
+    <section class="portfolio" id="portfolio">
+
+      <div class="main-text text-center">
+        <h2 class="heading">My Projects</h2>
+
+      </div>
+      
+      <div class="filter-buttons">
+        <button>All Work</button>
+        <button>Web Development</button>
+        <button>UI/UX Design</button>
+        <button>Branding Design</button>
+      </div>
+
+          <div class="container">
+            <div class="row">
+        
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="portfolio-box">
+                  <div class="portfolio-content">
+                    <h3>Food Delivery Website</h3>
+                    <p>From a user-friendly interface that makes navigation a breeze to a commitment to timely and reliable deliveries.</p>
+                    <a href="#portfolio" class="readMore">View More</a>
+                  </div>
+                  <div class="portfolio-img">
+                    <img src="images/Food Business Website.png" alt="">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-6">
+                <div class="portfolio-box">
+                  <div class="portfolio-content">
+                    <h3>Delivery and Logistics Services</h3>
+                    <p>Our platform is meticulously designed to provide a seamless end-to-end solution, from order fulfillment to last-mile delivery.</p>
+                    <a href="#portfolio" class="readMore">View More</a>
+                  </div>
+                  <div class="portfolio-img">
+                    <img src="images/Food Delivery Website.png" alt="">
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+        
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="portfolio-box">
+                  <div class="portfolio-content">
+                    <h3>Real Estate Reservation System</h3>
+                    <p>Our system is tailored to meet your needs, ensuring a smooth and transparent reservation experience.</p>
+                    <a href="#portfolio" class="readMore">View More</a>
+                  </div>
+                  <div class="portfolio-img">
+                    <img src="images/File System.png" alt="">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-6">
+                <div class="portfolio-box">
+                  <div class="portfolio-content">
+                    <h3>Chat Bot Automation</h3>
+                    <p>We've harnessed the power of artificial intelligence to create conversational bots that seamlessly interact with users.</p>
+                    <a href="#portfolio" class="readMore">View More</a>
+                  </div>
+                  <div class="portfolio-img">
+                    <img src="images/Chat Bot Automation.png" alt="">
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+        
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="portfolio-box">
+                  <div class="portfolio-content">
+                    <h3>Automated Telegram Bots Subscription</h3>
+                    <p>We help our clients to create their automated telegram bots.</p>
+                    <a href="#portfolio" class="readMore">View More</a>
+                  </div>
+                  <div class="portfolio-img">
+                    <img src="images/Telegram Automated Bot.png" alt="">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-6">
+                <div class="portfolio-box" >
+                  <div class="portfolio-content">
+                    <h3>Point of Sale System</h3>
+                    <p>Our platform goes beyond simple transactions, offering a comprehensive solution for inventory management, sales analytics, and customer engagement.</p>
+                    <a href="#portfolio" class="readMore">View More</a>
+                  </div>
+                  <div class="portfolio-img">
+                    <img src="images/pos.png" alt="">
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </section>
+        
+    <!-- Projects End -->
+
+    <!-- Tools Start -->
+    <!-- Tools End -->
+
+
+    <!-- Contact Us Start -->
+
+    <section class="contact" id="contact">
+
+      <div class="main-text2 text-center">
+        <h2>Contact <span>Me</span></h2>
+        <p>Get in touch with me</p>
+         </div>
+            <div class="contact-form">
+              <form action="">
+                <input type="text" placeholder="First Name" required> 
+                <input type="email" placeholder="Email Address" required> 
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="submit" name="" value="Send Message" class="send-btn" required> 
+              </form>
+            </div>
+          </section>
+
+          <!-- Footer -->
+          <div class="footer text-light">
+            <div class="copyright">
+              <p>2023 Renssu Docil Jr., All Rights Reserved.</p>
+            </div>
+            <a href="#home" class="scroll-top"></a>
+            <i class="ri-arrow-up-s-fill"></i>
+          </div>
+
+   <!-- Contact Us End -->
+
+
+
+
+
+    
+
+        <!--Javascript CDN Link-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <!--Javascripts required by Instructor -->    
+      <script src="index.js"></script>
+      <!--Javascripts for Home Page (Auto-Typing) -->
+      <script src="auto-input.js"></script>
+
+      <script src="preloader.js"></script>
+    </body>
 </html>
